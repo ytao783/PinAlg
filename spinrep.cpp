@@ -122,14 +122,17 @@ int main() {
 	}
 	
 	//always multiply backwards!
+	CliffSentence path32c = multiply(multiply(multiply(multiply(multiply(rot[1][2], rot[1][0]), rot[0][2]), rot[2][1]), rot[0][2]), rot[1][2]);
 	//example: Type 3.1b easiest case
-	CliffSentence result = multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(rot[1][0], rot[0][2]), rot[2][1]), rot[2][3]), rot[3][1]), rot[1][2]), rot[2][3]), rot[2][0]), rot[0][1]), rot[1][2]), rot[2][3]), rot[3][1]), rot[2][1]), rot[1][0]), rot[0][2]), rot[2][1]), rot[0][1]), rot[1][3]), rot[3][2]), rot[2][1]);
-	CliffSentence resulta = multiply(multiply(multiply(multiply(multiply(rot[1][0], rot[2][1]), rot[2][3]), rot[3][1]), rot[0][1]), rot[3][2]);
-	CliffSentence result0 = multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(rot[1][0], rot[1][2]), rot[2][0]), rot[0][1]), rot[1][2]), rot[1][3]), rot[3][0]), rot[3][4]), rot[4][0]), rot[0][3]), rot[3][4]), rot[3][1]), rot[1][2]), rot[1][4]), rot[4][2]), rot[2][1]), rot[1][4]), rot[1][3]), rot[2][3]), rot[3][0]), rot[0][2]), rot[2][3]), rot[0][3]), rot[3][1]), rot[4][1]), rot[1][0]), rot[0][4]), rot[4][1]), rot[0][1]), rot[1][3]), rot[4][3]), rot[3][2]), rot[2][4]), rot[4][3]), rot[2][3]), rot[3][1]);
+	CliffSentence path31b = multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(rot[1][0], rot[0][2]), rot[2][1]), rot[2][3]), rot[3][1]), rot[1][2]), rot[2][3]), rot[2][0]), rot[0][1]), rot[1][2]), rot[2][3]), rot[3][1]), rot[2][1]), rot[1][0]), rot[0][2]), rot[2][1]), rot[0][1]), rot[1][3]), rot[3][2]), rot[2][1]);
+	CliffSentence path31a = multiply(multiply(multiply(multiply(multiply(rot[1][0], rot[2][1]), rot[2][3]), rot[3][1]), rot[0][1]), rot[3][2]);
+	CliffSentence path30c = multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(rot[1][0], rot[1][2]), rot[2][0]), rot[0][1]), rot[1][2]), rot[1][3]), rot[3][0]), rot[3][4]), rot[4][0]), rot[0][3]), rot[3][4]), rot[3][1]), rot[1][2]), rot[1][4]), rot[4][2]), rot[2][1]), rot[1][4]), rot[1][3]), rot[2][3]), rot[3][0]), rot[0][2]), rot[2][3]), rot[0][3]), rot[3][1]), rot[4][1]), rot[1][0]), rot[0][4]), rot[4][1]), rot[0][1]), rot[1][3]), rot[4][3]), rot[3][2]), rot[2][4]), rot[4][3]), rot[2][3]), rot[3][1]);
 
-	cout << result.display() << endl;
-	cout << resulta.display() << endl;
-	cout << result0.display() << endl;
+	cout << path32c.display() << endl;
+	cout << path31a.display() << endl;
+	cout << path31b.display() << endl;
+	cout << path30c.display() << endl;
 
 	return 0;
+
 }
