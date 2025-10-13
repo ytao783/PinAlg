@@ -125,7 +125,7 @@ int main() {
 	CliffSentence path32c = multiply(multiply(multiply(multiply(multiply(rot[1][2], rot[1][0]), rot[0][2]), rot[2][1]), rot[0][2]), rot[1][2]);
 	//example: Type 3.1b easiest case
 	CliffSentence path31b = multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(rot[1][0], rot[0][2]), rot[2][1]), rot[2][3]), rot[3][1]), rot[1][2]), rot[2][3]), rot[2][0]), rot[0][1]), rot[1][2]), rot[2][3]), rot[3][1]), rot[2][1]), rot[1][0]), rot[0][2]), rot[2][1]), rot[0][1]), rot[1][3]), rot[3][2]), rot[2][1]);
-	CliffSentence path31a = multiply(multiply(multiply(multiply(multiply(rot[1][0], rot[2][1]), rot[2][3]), rot[3][1]), rot[0][1]), rot[3][2]);
+	CliffSentence path31a = multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(rot[1][0], rot[0][2]), rot[0][2]), rot[2][1]), rot[2][3]), rot[3][1]), rot[0][3]), rot[0][1]), rot[1][3]), rot[1][3]), rot[3][2]), rot[2][1]);
 	CliffSentence path30c = multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(multiply(rot[1][0], rot[1][2]), rot[2][0]), rot[0][1]), rot[1][2]), rot[1][3]), rot[3][0]), rot[3][4]), rot[4][0]), rot[0][3]), rot[3][4]), rot[3][1]), rot[1][2]), rot[1][4]), rot[4][2]), rot[2][1]), rot[1][4]), rot[1][3]), rot[2][3]), rot[3][0]), rot[0][2]), rot[2][3]), rot[0][3]), rot[3][1]), rot[4][1]), rot[1][0]), rot[0][4]), rot[4][1]), rot[0][1]), rot[1][3]), rot[4][3]), rot[3][2]), rot[2][4]), rot[4][3]), rot[2][3]), rot[3][1]);
 
 	cout << path32c.display() << endl;
@@ -136,3 +136,4 @@ int main() {
 	return 0;
 
 }
+
